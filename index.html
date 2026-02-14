@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionnel de [Votre Nom] - Développeur Full Stack Junior">
+    <meta name="keywords" content="développeur, full stack, Angular, Spring Boot, Laravel, TypeScript, portfolio">
+    <meta name="author" content="[Votre Nom]">
+    <title>NOUBAM NJASSINE - Développeur Full Stack Junior | Portfolio</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts - Typographie moderne et distinctive -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+
+    <!-- ========================================
+         SCROLL PROGRESS BAR
+    ======================================== -->
+    <div id="scrollProgress" class="scroll-progress"></div>
+
+    <!-- ========================================
+         DARK/LIGHT MODE TOGGLE BUTTON
+    ======================================== -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Basculer entre mode sombre et clair">
+        <i class="bi bi-sun-fill"></i>
+    </button>
+
+    <!-- ========================================
+         NAVBAR FIXE AVEC MENU HAMBURGER
+    ======================================== -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+            <div class="container">
+                <!-- Logo / Nom -->
+                <!-- 👇 MODIFIER ICI: Remplacez par votre nom -->
+                <a class="navbar-brand" href="#home">
+                    <span class="brand-text">&lt;NOUBAM NJASSINE /&gt;</span>
+                </a>
+
+                <!-- Bouton Menu Mobile (Hamburger) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Navigation -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Parcours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========================================
+         MAIN CONTENT
+    ======================================== -->
+    <main>
+
+        <!-- ========================================
+             SECTION HERO
+        ======================================== -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="hero-content">
+                            <p class="hero-greeting">Bonjour, je suis</p>
+                            <!-- 👇 MODIFIER ICI: Remplacez par votre nom -->
+                            <h1 class="hero-title">Noubam Adrien</h1>
+
+                            <!-- Effet Typewriter sur le titre -->
+                            <h2 class="hero-subtitle">
+                                <span class="typing-text"></span>
+                                <span class="cursor">|</span>
+                            </h2>
+
+                            <!-- 👇 MODIFIER ICI: Personnalisez votre slogan -->
+                            <p class="hero-description">
+                                Développeur Full Stack Junior par la création d'applications web
+                                performantes et modernes. Spécialisé et passioné par Angular, Spring Boot et Laravel.
+                            </p>
+
+                            <div class="hero-buttons">
+                                <!-- 👇 MODIFIER ICI: Ajoutez le lien vers votre CV -->
+                                <a href="image/mon cv.docx" class="btn btn-primary btn-lg" download>
+                                    <i class="bi bi-download me-2"></i>Télécharger CV
+                                </a>
+                                <a href="#contact" class="btn btn-outline-primary btn-lg">
+                                    <i class="bi bi-envelope me-2"></i>Me Contacter
+                                </a>
+                            </div>
+
+                            <!-- Réseaux sociaux -->
+                            <div class="hero-social">
+                                <!-- 👇 MODIFIER ICI: Ajoutez vos liens de réseaux sociaux -->
+                                <a href="https://github.com/damso667" target="_blank" rel="noopener"
+                                    aria-label="GitHub">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/adrien-njassine-0b75a839a" target="_blank"
+                                    rel="noopener" aria-label="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="https://twitter.com/votreusername" target="_blank" rel="noopener"
+                                    aria-label="Twitter">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="mailto:njassineadrien@gmail.com" aria-label="Email">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="hero-image">
+                            <!-- 👇 MODIFIER ICI: Remplacez par votre photo professionnelle -->
+                            <div class="image-wrapper">
+                                <img src="image/c54003e4-7dea-4d70-bfb1-78cd1c065938.jpg"
+                                    alt="Photo de profil de [Votre Nom]" class="img-fluid profile-img">
+                                <div class="image-decoration"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scroll Down Indicator -->
+                <a href="#about" class="scroll-down" aria-label="Défiler vers le bas">
+                    <i class="bi bi-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION À PROPOS
+        ======================================== -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">À Propos de Moi</h2>
+                    <p class="section-subtitle">Découvrez mon parcours et ma passion pour le développement</p>
+                </div>
+
+                <div class="row align-items-center mt-5">
+                    <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+                        <div class="about-image">
+                            <!-- 👇 MODIFIER ICI: Photo secondaire ou illustration -->
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=600&fit=crop"
+                                alt="Workspace de développement" class="img-fluid rounded-4 shadow">
+                            <div class="about-experience">
+                                <h3 class="mb-0">2+</h3>
+                                <p class="mb-0">Années d'expérience</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7" data-aos="fade-left">
+                        <div class="about-content">
+                            <!-- 👇 MODIFIER ICI: Personnalisez votre présentation -->
+                            <h3 class="mb-4">Développeur Full Stack Junior passionné</h3>
+                            <p class="lead mb-4">
+                                En année de BTS en développement informatique, je suis spécialisé dans
+                                la création d'applications web modernes et performantes.
+                            </p>
+                            <p>
+                                Ma passion pour le code m'a conduit à maîtriser plusieurs technologies
+                                front-end et back-end. J'aime transformer des idées complexes en solutions
+                                élégantes et fonctionnelles.
+                            </p>
+                            <p>
+                                Toujours en quête d'apprentissage, je reste à l'affût des dernières
+                                tendances technologiques pour offrir des solutions innovantes et adaptées
+                                aux besoins actuels du marché.
+                            </p>
+
+                            <div class="about-info mt-4">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="info-item">
+                                            <i class="bi bi-person-badge"></i>
+                                            <div>
+                                                <h6>Nom</h6>
+                                                <p>Noubam Adrien</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info-item">
+                                            <i class="bi bi-envelope"></i>
+                                            <div>
+                                                <h6>Email</h6>
+                                                <p>njassineadrien@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info-item">
+                                            <i class="bi bi-geo-alt"></i>
+                                            <div>
+                                                <h6>Localisation</h6>
+                                                <p>Yaoundé, Cameroun</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info-item">
+                                            <i class="bi bi-briefcase"></i>
+                                            <div>
+                                                <h6>Disponibilité</h6>
+                                                <p>Ouvert aux opportunités</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION COMPÉTENCES
+        ======================================== -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Compétences Techniques</h2>
+                    <p class="section-subtitle">Technologies et outils que je maîtrise</p>
+                </div>
+
+                <!-- Carrousel de logos de technologies -->
+                <div class="tech-carousel mb-5" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-track">
+                        <!-- 👇 Les logos réels des technologies défilent automatiquement -->
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                                alt="Angular">
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                                alt="Spring Boot">
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
+                                alt="Laravel">
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                alt="TypeScript">
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                                alt="Bootstrap">
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                alt="Java">
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                                alt="PHP">
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                alt="MySQL">
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                alt="Git">
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                                alt="Docker">
+                        </div>
+                        <!-- Duplication pour effet de boucle infinie -->
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                                alt="Angular">
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                                alt="Spring Boot">
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
+                                alt="Laravel">
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                alt="TypeScript">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Barres de progression des compétences -->
+                <div class="row mt-5">
+                    <!-- Frontend -->
+                    <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-delay="200">
+                        <h4 class="mb-4"><i class="bi bi-code-slash me-2"></i>Frontend</h4>
+
+                        <!-- 👇 MODIFIER ICI: Ajustez les pourcentages selon votre niveau -->
+                        <div class="skill-item mb-4">
+                            <div class="skill-header">
+                                <span class="skill-name">Angular</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-progress="75"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item mb-4">
+                            <div class="skill-header">
+                                <span class="skill-name">TypeScript</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-progress="70"
+                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item mb-4">
+                            <div class="skill-header">
+                                <span class="skill-name">Bootstrap</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-progress="80"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item mb-4">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML5 / CSS3</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-progress="85"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item mb-4">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-progress="75"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-delay="200">
+                        <h4 class="mb-4"><i class="bi bi-server me-2"></i>Backend</h4>
+
+                        <div class="skill-item mb-4">
+                            <div class="skill-header">
+                                <span class="skill-name">Java Spring Boot</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-progress="85"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item mb-4">
+                            <div class="skill-header">
+                                <span class="skill-name">Laravel PHP</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-progress="65"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item mb-4">
+                            <div class="skill-header">
+                                <span class="skill-name">MySQL / PostgreSQL</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-progress="75"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item mb-4">
+                            <div class="skill-header">
+                                <span class="skill-name">API REST</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-progress="80"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item mb-4">
+                            <div class="skill-header">
+                                <span class="skill-name">Git / GitHuB</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" data-progress="70"
+                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION PROJETS
+        ======================================== -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Mes Projets</h2>
+                    <p class="section-subtitle">Découvrez mes réalisations récentes</p>
+                </div>
+
+                <!-- Filtres de projets -->
+                <div class="project-filters text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                </div>
+
+                <!-- Grille de projets -->
+                <div class="row g-4" id="projectsGrid">
+
+                    <!-- 👇 MODIFIER ICI: Personnalisez vos projets (titre, description, image, liens, stack) -->
+
+                    <!-- Projet 1 -->
+                    <div class="col-lg-4 col-md-6 project-item" data-category="fullstack" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="image/Capture laboratoire.png" alt="Dashboard Analytics" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/damso667/mon-projet-frontend.git" target="_blank"
+                                            rel="noopener" class="project-link" aria-label="Voir le code sur GitHub">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="https://mon-projet-frontend-9b5q.vercel.app" target="_blank"
+                                            rel="noopener" class="project-link" aria-label="Voir la démo live">
+                                            <i class="bi bi-box-arrow-up-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">Gestion de Laboratoire hospitalier</h4>
+                                <p class="project-description">
+                                    Application de gestion de laboratoire hospitalier avec interface d'administration,
+                                    gestion des patients, des tests et des résultats.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Angular</span>
+                                    <span class="tech-tag">Spring Boot</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 -->
+                    <div class="col-lg-4 col-md-6 project-item" data-category="fullstack" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="image/Capture banque.png" alt="E-Commerce Platform" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/damso667/projet-banque-Front.git" target="_blank"
+                                            rel="noopener" class="project-link" aria-label="Voir le code sur GitHub">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="https://projet-banque-front.vercel.app" target="_blank" rel="noopener"
+                                            class="project-link" aria-label="Voir la démo live">
+                                            <i class="bi bi-box-arrow-up-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">mini gestion d'une banque</h4>
+                                <p class="project-description">
+                                    Application de gestion bancaire avec fonctionnalités de création de comptes,
+                                    gestion des transactions et interface utilisateur intuitive.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Angular</span>
+                                    <span class="tech-tag">Spring boot</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 -->
+                    <div class="col-lg-4 col-md-6 project-item" data-category="frontend" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1534951009808-766178b47a4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbXB0ZXIlMjBsJUUyJTgwJTk5YXJnZW50fGVufDB8fDB8fHww"
+                                    alt="Task Management App" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/damso667/simulation-epargne.git" target="_blank"
+                                            rel="noopener" class="project-link" aria-label="Voir le code sur GitHub">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="https://simulation-epizy.fwh.is/index.html" target="_blank"
+                                            rel="noopener" class="project-link" aria-label="Voir la démo live">
+                                            <i class="bi bi-box-arrow-up-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">Simulation d'épargne</h4>
+                                <p class="project-description">
+                                    Application de simulation d'épargne avec calculs dynamiques,
+                                    interface utilisateur intuitive et visualisation des résultats.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">Bootstrap</span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 4 -->
+                    <div class="col-lg-4 col-md-6 project-item" data-category="backend" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop"
+                                    alt="REST API" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/damso667/CommentaireApi.git" target="_blank"
+                                            rel="noopener" class="project-link" aria-label="Voir le code sur GitHub">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <!-- <a href="#" target="_blank" rel="noopener" 
+                                           class="project-link" aria-label="Voir la documentation">
+                                            <i class="bi bi-box-arrow-up-right"></i>
+                                        </a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">REST API Commantaire</h4>
+                                <p class="project-description">
+                                    API REST de gestion de commentaires avec Spring Boot,
+                                    implémentant des fonctionnalités CRUD, sécurité JWT et gestion de la positivité du
+                                    commantaire
+                                    .
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Spring Boot</span>
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 5 -->
+                    <div class="col-lg-4 col-md-6 project-item" data-category="fullstack" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAACUCAMAAAD79nauAAAAbFBMVEX///8BAQEAAAD8/PwFBQX29vbn5+f5+fnz8/Pr6+vv7+/c3NzOzs6tra3j4+PS0tKfn58xMTHBwcG7u7tMTExEREQ2NjaYmJhiYmLIyMg7Ozt3d3eQkJCmpqYRERFYWFhsbGyEhIQkJCQbGxurq3cVAAAIh0lEQVR4nO1ciZKiMBBlOoCcAnIKyuX//+N2QAVC4jAOyE5VXu1W7cio/ZJO31lFkZCQkJCQkJCQkJCQkJCQkJCQkNgTBP+atrm3GL+FnWZ5dt5bil/BrgNA1NbegrwHohArzKFH7u0tznvQnBQ34asDBH+OBD3MWlg8KXzBHyShKAc/KuHJAUm0zt4i/RCGV9Bj8KU+N0KF8tztzx8AoXLqbtYRgK/nRuBOwGlv4X4AL61GajRiEf6VnVCcijoFlU/i/wc6Bf1661zC15wDsvgLJAwnpXvA2YQ7CXdvCV+CnmbjWrf0NHM3oSdx3VvOb2BdYuCd5gkJf28pX4HYUe8UhJrUk7gc9pZUjINLt4D++WYnmr1J2OHVv7oeT4zz7RvpOwaIRvu42A+g3FYTBzcV1DKIG0NRxj6LKEa9jIIKhbabsyNeBmO4jCTH7/cBGeQ1QGbswwDhdMZf7cVBC8pqhfeaA552TOqulrEriZCxncAc0JckKIVbc0LpkUS1X356fNoeuIcU0/jBFnro/i2+3u0cAYh3TLL9LpbApCbJ8z64g7FC6aIzgb8aZH34TY8RfsCOVRs7p3Jn6cnWdedalPhTM3osIoEr34wTUoByPxKENAC5+xDgcEL3nOjD8zmJXo8y1558Dr6kK/vBa5OxPMcKymdAShSznJKg24YUPNYU7UxCKaZRtB6P9ckMJiRQ1jL3OcYUY9zj1oK+gg7Z07DQsPs8ruZZ8UCCupG2cBmv3iMHsNnXPgiiZExWVkXDolrVqCwD7cUTREh4lPYsPBF0aLU2+TkYFtXIAB5OpHVNIqoGVAD7lpQPDThj4bR0IKHVoNLyDAT1y+pYtnvN5qxGk5+Pg8nXis4eRZQXeRGmFruXO3C5RadSQzei1uG3lqfZnQSGgZngCaoauAtytgvsXe4gSnUTHEuSLlviK0C6qkw/BkHf0AgUHgPEJcUYzMSb739rYwStwMwvXGLMS4pVBXoHIVz4W7FwiU+Y4K0q0DswKkHs4y5b4jMIbYNyCFtozuYHqiGhQNZw2RJjrl6Jnh27OnSLPN6UbTH0CriZfvhiiUfwMEsSPfPhHnplV4MTO66JFC68l0/LSNgYmIieJaDeI0g12TQ2IYoRtzy3fb6J9WQEzABvgkfWwAF3o9ouYqd7fOXaUqeFaIEGIAkQPHKHYL7rFW8YnlhHAyKOgUIS8YKwA9NYPgmaroxzQxXULeITXOfjJY7zSKXhD7vqXgDxAuNotqKd0HMmS18WAvwMRLHrR+ksmRtBO19UFjMTEYmrOi81rM/CaweldWc7YceQL7DvVjQtuj1BGrbmQ2t16xopojjB0A5FW8+SOFZcEpMECX+gaSx3w44RPOrVw6mA1ljVX5jZ0JbmWRh0ggnfKtppXUVRVV9pwcmoBTWb07PKO9mLdaNFdxjRQDbRbIGsmjdAc+inO+4oU/1QcMsdhOYjtV9HwYQGvmVNQ6sVo09XOWcCl7idJkzUmjWMTDcXP4dXSbDiviDl+XU50iuYFFh+C9Tl+4mgpZlortaUBHsMTzFMFL2rqvNPq0dVlHSt8HM9aNW6o0V0Jzp1ogX+lpOj4i+wJM7lvFROl4CnIekoCDbc8nn+qJld72if7qtD6zK8xUFlv02lE1T7+ZWCcqJlejXYkMp4VQL6GTS/7E9nUJjctWlGVfIOGag8EtyZAp1pvhgDC3XN7IKcmyiP6yu3i61QEurEwXqBqO3CCeV9tgd4HFisG85qlmVpRFTgu8B0iVOBNqm8XLyaFnzwK7zkcSo+Wbu9MOWOi7CLN3dgdgA5u+Du/WxzzPl2SBk9EZDAnWDPBKHBX8FoKSF1f6Y+WjH0GRJXVWSdZkpO3bjPrDd5tMY/SuLKFJ5QRbhDQ5wc245oyDJTmt4yfLQVgB5qTIKgfs1IdI2YubUJ0ffwPhHuG/e5MxHeoJgM3pBoNNbbQUVvf3Nn1u3A2oQ7jn3P/5N971MLxTRYO2bsqaCJ82G2rpagG2nSJaAeeyuR53BaqCdlNaJYzWO0FO4dvZbqBustPUEFpOvIQirs/20A9NDZLLg1s6R8phOPGQ8WDbVrHEGtbqjwo31KtEYZq740pXAvRVZVWd34ovihFLSFTXTaUG07gMAcUDsRfaFm6kdTPKplc6snCJNuBLdmuiaIF6aX9Op0WqTnUL018ZDS4I8XkNFqYbDt/MFwTQgz4YtOtBjit74xFlVmQtQm7mFZBbhspp8M6XO37XYMyTsTD7R0yCePwUi5XccF45pqOtSOPilq38uHMeZig7872m3bxU5Od2HsjulkDdzeINEHfzwYQnarwOuva02nM2mM8IZNt3NI+PbAh9razs1pgmnkt0qnobCJF0X2zLmvB0c4tCgm0ZlQy3F93w/tw+Bk6DgFv//t8bog6+EiKmO8GIwg9PJpHtAY5JbExVPvrEAUpp62DMEJGnYRiRfpsP5sbvSDXWFvPE+iRiR5PXL0S1ASgrxTpE4oDb0hMnQGuj6vQ18vPhBY8CTCLxZsBC/HvL8nmvWy+s4i7DPYSNCg8JJnfFFcwXZ5byjdLvjbZ3ac1hh51wBfOOyYRwLVD22Tv9OdkHPL7kU3xCiuXx8T/tbFgkL/J0AvQakTcdS+xCoiYfPrst3o434Dy07fB4FH3wW6ur5QMY45355xa5qfAW3oHJpR8gxlkr7UbDJrjY4O9373pOh166LKb3ic46xxv6sNpXwSIAr+PoKuu3bQ7fP55Cz5D0U04Hv5ReNF/w1crpffYvBhQ5AL73428KfY/lsYl9FFvbuFpbbpr9z176G57F1zFSL9j5HANCceDW/Qf8X2luH2Vjh1///CozQrGBP+/+H5TRbFMfoWf9cLUr8AXXpi2Qhz28xNQkJCQkJCQkJCQkJCQkJCQkJC4oF/oyBdHZTdbDwAAAAASUVORK5CYII="
+                                    alt="Student Portal" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/damso667/shareMusique.git" target="_blank"
+                                            rel="noopener" class="project-link" aria-label="Voir le code sur GitHub">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="https://sharemusique.infinityfree.me/index.php" target="_blank"
+                                            rel="noopener" class="project-link" aria-label="Voir la démo live">
+                                            <i class="bi bi-box-arrow-up-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">Share Music</h4>
+                                <p class="project-description">
+                                    Application de partage de musique avec fonctionnalités de streaming avec
+                                    possibiliter de telechargment et partage entre utilisateurs et avec une interface
+                                    utilisateur moderne.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Laravel</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">HTML</span>
+
+
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 6 -->
+                    <div class="col-lg-4 col-md-6 project-item" data-category="frontend" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwlwNJKO1KFxbms4b_tbhTaPX8mRJ3yK625A&s"
+                                    alt="Portfolio Template" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/damso667/mon-Portefolio.git" target="_blank"
+                                            rel="noopener" class="project-link" aria-label="Voir le code sur GitHub">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="#" target="_blank" rel="noopener" class="project-link"
+                                            aria-label="Voir la démo live">
+                                            <i class="bi bi-box-arrow-up-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">Portfolio Template</h4>
+                                <p class="project-description">
+                                    Template de portfolio moderne et responsive avec animations,
+                                    dark mode et optimisations de performance.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION EXPÉRIENCE / FORMATION
+        ======================================== -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Mon Parcours</h2>
+                    <p class="section-subtitle">Formation et expériences professionnelles</p>
+                </div>
+
+                <div class="row mt-5">
+                    <!-- Timeline Expérience -->
+                    <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                        <h3 class="timeline-header mb-4">
+                            <i class="bi bi-briefcase-fill me-2"></i>Expérience
+                        </h3>
+                        <div class="timeline">
+
+                            <!-- 👇 MODIFIER ICI: Personnalisez vos expériences professionnelles -->
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">
+                                        <i class="bi bi-calendar3"></i> Sept 2026 - Présent
+                                    </div>
+                                    <h4 class="timeline-title">Développeur Full Stack Junior</h4>
+                                    <h5 class="timeline-company">Etudiant</h5>
+                                    <p class="timeline-description">
+                                        Développement d'applications web avec Angular et Spring Boot.
+                                        Participation à la conception et à l'implémentation de nouvelles
+                                        fonctionnalités. Collaboration en équipe Agile/Scrum.
+                                    </p>
+                                    <div class="timeline-tech">
+                                        <span class="tech-badge">Angular</span>
+                                        <span class="tech-badge">Spring Boot</span>
+                                        <span class="tech-badge">MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">
+                                        <i class="bi bi-calendar3"></i> juin 2025 - Août 2025
+                                    </div>
+                                    <h4 class="timeline-title">Stage Développeur Web</h4>
+                                    <h5 class="timeline-company">MCA Conseils SARL - Yaoundé</h5>
+                                    <p class="timeline-description">
+                                        Stage de fin d'études axé sur le développement d'applications
+                                        web avec Laravel et Bootstrap. Création de sites vitrines et
+                                        e-commerce pour divers clients.
+                                    </p>
+                                    <div class="timeline-tech">
+                                        <span class="tech-badge">Laravel</span>
+                                        <span class="tech-badge">PHP</span>
+                                        <span class="tech-badge">Bootstrap</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">
+                                        <i class="bi bi-calendar3"></i> Juin 2025 - Août 2025
+                                    </div>
+                                    <h4 class="timeline-title"></h4>
+                                    <h5 class="timeline-company">Projets Freelance / Pratique personnelle</h5>
+                                    <p class="timeline-description">
+                                        Création de sites web dynamiques et maintenance d’applications existantes.
+                                        Approfondissement des bases HTML/CSS/JavaScript et PHP/MySQL.
+                                        Développement de solutions personnalisées pour des besoins réels, gestion du
+                                        cycle complet : analyse, développement, test et livraison.
+                                    </p>
+                                    <div class="timeline-tech">
+                                        <span class="tech-badge">HTML/CSS</span>
+                                        <span class="tech-badge">JavaScript</span>
+                                        <span class="tech-badge">WordPress</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Timeline Formation -->
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <h3 class="timeline-header mb-4">
+                            <i class="bi bi-mortarboard-fill me-2"></i>Formation
+                        </h3>
+                        <div class="timeline">
+
+                            <!-- 👇 MODIFIER ICI: Personnalisez votre parcours de formation -->
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">
+                                        <i class="bi bi-calendar3"></i> 2025- 2026 (En cour)
+                                    </div>
+                                    <h4 class="timeline-title">BTS Genie Logiciel</h4>
+                                    <h5 class="timeline-company">Institut MATAMFEN - Yaoundé</h5>
+                                    <p class="timeline-description">
+                                        Option SLAM (Solutions Logicielles et Applications Métiers).
+                                        Formation complète sur les technologies web, bases de données,
+                                        et gestion de projets informatiques.
+                                    </p>
+                                    <div class="timeline-tech">
+                                        <span class="tech-badge">Développement Web</span>
+                                        <span class="tech-badge">Bases de Données</span>
+                                        <span class="tech-badge">Gestion de Projet</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">
+                                        <i class="bi bi-calendar3"></i> 2025
+                                    </div>
+                                    <h4 class="timeline-title">Certifications en Ligne</h4>
+                                    <h5 class="timeline-company">Udemy & Coursera</h5>
+                                    <p class="timeline-description">
+                                        Formation continue sur les frameworks modernes (Angular, Spring Boot).
+                                        Spécialisation en développement Full Stack et architecture d'applications.
+                                    </p>
+                                    <div class="timeline-tech">
+                                        <span class="tech-badge">Angular</span>
+                                        <span class="tech-badge">Spring Boot</span>
+                                        <span class="tech-badge">TypeScript</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">
+                                        <i class="bi bi-calendar3"></i> 2023 - 2024
+                                    </div>
+                                    <h4 class="timeline-title">Baccalauréat Scientifique</h4>
+                                    <h5 class="timeline-company">Lycée D'Ekorezok - Yaoundé</h5>
+                                    <p class="timeline-description">
+                                        Option Sciences de l'Ingénieur. Mention Assez bien.
+                                        Première approche de la programmation et de l'algorithmique.
+                                    </p>
+                                    <div class="timeline-tech">
+                                        <span class="tech-badge">Mathématiques</span>
+                                        <span class="tech-badge">Physique</span>
+                                        <span class="tech-badge">Informatique</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION SERVICES
+        ======================================== -->
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Mes Services</h2>
+                    <p class="section-subtitle">Ce que je peux faire pour vous</p>
+                </div>
+
+                <div class="row g-4 mt-4">
+
+                    <!-- 👇 MODIFIER ICI: Personnalisez vos services -->
+
+                    <!-- Service 1 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h4 class="service-title">Développement Frontend</h4>
+                            <p class="service-description">
+                                Création d'interfaces utilisateur modernes et responsives avec Angular,
+                                TypeScript et Bootstrap. Design élégant et expérience utilisateur optimale.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Applications Angular</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Design Responsive</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Animations fluides</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-server"></i>
+                            </div>
+                            <h4 class="service-title">Développement Backend</h4>
+                            <p class="service-description">
+                                Conception d'API REST robustes et sécurisées avec Spring Boot et Laravel.
+                                Gestion de bases de données et architecture scalable.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill"></i> API REST</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Authentification JWT</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Base de données</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-window-stack"></i>
+                            </div>
+                            <h4 class="service-title">Applications Full Stack</h4>
+                            <p class="service-description">
+                                Développement complet d'applications web de A à Z.
+                                Intégration frontend-backend, déploiement et maintenance.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Développement complet</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Intégration continue</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Déploiement</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                            <h4 class="service-title">Applications Responsives</h4>
+                            <p class="service-description">
+                                Sites web et applications parfaitement adaptés à tous les appareils.
+                                Mobile-first design et optimisation des performances.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Mobile-first</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Cross-browser</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Performance optimale</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-tools"></i>
+                            </div>
+                            <h4 class="service-title">Maintenance & Support</h4>
+                            <p class="service-description">
+                                Maintenance corrective et évolutive de vos applications existantes.
+                                Debugging, optimisations et ajout de nouvelles fonctionnalités.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Correction de bugs</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Mises à jour</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Support technique</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-code-square"></i>
+                            </div>
+                            <h4 class="service-title">Refactoring & Optimisation</h4>
+                            <p class="service-description">
+                                Amélioration de code existant, refactoring pour une meilleure
+                                maintenabilité et optimisation des performances.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Code propre</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Bonnes pratiques</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SECTION TÉMOIGNAGES
+        ======================================== -->
+        <!-- <section id="testimonials" class="testimonials-section section-padding">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Témoignages</h2>
+                    <p class="section-subtitle">Ce que disent mes clients et collègues</p>
+                </div>
+
+                <div class="row mt-5 g-4"> -->
+
+        <!-- 👇 MODIFIER ICI: Personnalisez les témoignages -->
+
+        <!-- Témoignage 1 -->
+        <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Excellent développeur junior ! Alexandre a su comprendre rapidement nos 
+                                besoins et livrer une application de qualité. Son code est propre et bien 
+                                documenté. Je recommande vivement."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://i.pravatar.cc/150?img=12" alt="Marie Dubois" class="author-img">
+                                <div class="author-info">
+                                    <h5 class="author-name">Marie Dubois</h5>
+                                    <p class="author-position">Chef de Projet - TechStartup</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Témoignage 2 -->
+        <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Travail sérieux et professionnel. Alexandre maîtrise bien Angular et 
+                                Spring Boot. Il est autonome, rigoureux et toujours à l'écoute. 
+                                Une belle recrue pour notre équipe !"
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://i.pravatar.cc/150?img=33" alt="Thomas Martin" class="author-img">
+                                <div class="author-info">
+                                    <h5 class="author-name">Thomas Martin</h5>
+                                    <p class="author-position">Lead Developer - WebAgency</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+        <!-- Témoignage 3 -->
+        <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Très satisfait du travail réalisé. Le site est exactement ce que je 
+                                voulais, responsive et rapide. Communication fluide et respect des délais. 
+                                Je ferai de nouveau appel à ses services."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://i.pravatar.cc/150?img=27" alt="Sophie Bernard" class="author-img">
+                                <div class="author-info">
+                                    <h5 class="author-name">Sophie Bernard</h5>
+                                    <p class="author-position">Gérante - E-Commerce Bio</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  -->
+
+        <!-- </div>
+            </div>
+        </section> -->
+
+        <!-- ========================================
+             SECTION CONTACT
+        ======================================== -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Contactez-Moi</h2>
+                    <p class="section-subtitle">N'hésitez pas à me contacter pour vos projets ou opportunités
+                        professionnelles</p>
+                </div>
+
+                <div class="row mt-5 g-4">
+
+                    <!-- Informations de contact -->
+                    <div class="col-lg-4" data-aos="fade-right">
+                        <div class="contact-info">
+
+                            <!-- 👇 MODIFIER ICI: Vos informations de contact -->
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Localisation</h5>
+                                    <p>Yaoundé, Nkobisson<br>Cameroon</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Email</h5>
+                                    <p><a href="mailto:njassineadrien@gmail.com">njassineadrien@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-phone-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Téléphone</h5>
+                                    <p><a href="tel:+33612345678">+237 674 88 26 03</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-clock-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Disponibilité</h5>
+                                    <p>Overt aux opportunités professionnelles<br></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Formulaire de contact -->
+                    <div class="col-lg-8" data-aos="fade-left">
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label">Nom complet *</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Votre nom" required>
+                                        <div class="invalid-feedback">
+                                            Veuillez entrer votre nom
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email *</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="votre.email@example.com" required>
+                                        <div class="invalid-feedback">
+                                            Veuillez entrer un email valide
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="subject" class="form-label">Sujet *</label>
+                                        <input type="text" class="form-control" id="subject" name="subject"
+                                            placeholder="Sujet de votre message" required>
+                                        <div class="invalid-feedback">
+                                            Veuillez entrer un sujet
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="message" class="form-label">Message *</label>
+                                        <textarea class="form-control" id="message" name="message" rows="6"
+                                            placeholder="Décrivez votre projet ou votre demande..." required></textarea>
+                                        <div class="invalid-feedback">
+                                            Veuillez entrer votre message (minimum 10 caractères)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <i class="bi bi-send me-2"></i>Envoyer le message
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Message de succès/erreur -->
+                            <div id="formMessage" class="alert mt-3" style="display: none;" role="alert"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- À propos -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <h4 class="footer-title">&lt;DevJunior /&gt;</h4>
+                        <p class="footer-description">
+                            Développeur Full Stack Junior passionné par la création d'applications
+                            web innovantes et performantes.
+                        </p>
+                        <div class="footer-social">
+                            <!-- 👇 MODIFIER ICI: Vos liens de réseaux sociaux -->
+                            <a href="https://github.com/damso667" target="_blank" rel="noopener" aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/adrien-njassine-0b75a839a" target="_blank" rel="noopener"
+                                aria-label="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com/votreusername" target="_blank" rel="noopener"
+                                aria-label="Twitter">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="mailto:njassineadrien@gmail.com" aria-label="Email">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Liens rapides -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5 class="footer-title">Navigation</h5>
+                        <ul class="footer-menu">
+                            <li><a href="#home">Accueil</a></li>
+                            <li><a href="#about">À propos</a></li>
+                            <li><a href="#skills">Compétences</a></li>
+                            <li><a href="#projects">Projets</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h5 class="footer-title">Services</h5>
+                        <ul class="footer-menu">
+                            <li><a href="#services">Développement Frontend</a></li>
+                            <li><a href="#services">Développement Backend</a></li>
+                            <li><a href="#services">Applications Full Stack</a></li>
+                            <li><a href="#services">Maintenance & Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h5 class="footer-title">Contact</h5>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="bi bi-geo-alt"></i>
+                                Yaoundé, Cameroon
+                            </li>
+                            <li>
+                                <i class="bi bi-envelope"></i>
+                                njassineadrien@gmail.com
+                            </li>
+                            <li>
+                                <i class="bi bi-phone"></i>
+                                +237 674 88 26 03
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="copyright">
+                            &copy; 2025 <strong>Njassine Adrien</strong>. Tous droits réservés.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="made-with">
+                            Fait avec <i class="bi bi-heart-fill text-danger"></i> et beaucoup de <i
+                                class="bi bi-cup-hot-fill"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         BOUTON RETOUR EN HAUT
+    ======================================== -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- ========================================
+         SCRIPTS
+    ======================================== -->
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        ( function () {
+            emailjs.init( 'REi58AEadkPdDseHv' ); // ← REMPLACE PAR TA PUBLIC KEY
+        } )();
+    </script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
